@@ -4,7 +4,6 @@ import Hero from '../components/Hero';
 import Products from '../components/Products';
 import About from '../components/About';
 import Testimonials from '../components/Testimonials';
-import Footer from '../components/Footer';
 
 const Home: React.FC = () => {
   // Extract the stats section from About to display it separately
@@ -98,7 +97,6 @@ const Home: React.FC = () => {
       <Testimonials />
       <FeaturesSection />
       <StatsSection />
-      <Footer />
     </div>
   );
 };
