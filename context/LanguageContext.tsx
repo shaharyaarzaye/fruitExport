@@ -12,8 +12,10 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
+  // Always default to English if no valid language is set
   const [locale, setLocaleState] = useState<LanguageCode>(() => {
-    return (localStorage.getItem('ashirwad-locale') as LanguageCode) || 'en';
+    const savedLocale = localStorage.getItem('ashirwad-locale') as LanguageCode | null;
+    return (savedLocale && translations[savedLocale]) ? savedLocale : 'en';
   });
 
   const setLocale = (code: LanguageCode) => {

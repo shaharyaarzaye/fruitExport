@@ -67,7 +67,6 @@ const Navbar: React.FC = () => {
                 <span className="text-white font-bold text-lg leading-none tracking-tight">ENTERPRISES</span>
               </div>
               <div className="hidden lg:block h-8 w-[1px] bg-white/20 ml-2"></div>
-              <span className="hidden lg:block text-white font-bold text-lg ml-2">Ashirwad Enterprises</span>
             </div>
           </Link>
           
