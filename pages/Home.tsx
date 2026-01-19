@@ -94,9 +94,9 @@ const Home: React.FC = () => {
       <Hero />
       <Products />
       <About />
-      <Testimonials />
-      <FeaturesSection />
-      <StatsSection />
+      {/* <Testimonials /> */}
+      {/* <FeaturesSection /> */}
+      {/* <StatsSection /> */}
     </div>
   );
 };

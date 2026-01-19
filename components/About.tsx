@@ -6,7 +6,7 @@ const About: React.FC = () => {
   return (
     <div id="about">
       {/* About Hero Banner */}
-      <section className="bg-[#1a1a1a] text-white py-24 relative overflow-hidden">
+      {/* <section className="bg-[#1a1a1a] text-white py-24 relative overflow-hidden">
         <div 
           className="absolute inset-0 opacity-20 bg-cover bg-center"
           style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1521791136364-798a7bc0d267?q=80&w=1600&auto=format&fit=crop")' }}
@@ -20,10 +20,10 @@ const About: React.FC = () => {
             <span className="text-white">About Us</span>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Welcome Section */}
-      <section className="py-20 bg-white">
+      {/* <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="rounded-2xl overflow-hidden shadow-xl">
@@ -51,7 +51,7 @@ const About: React.FC = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Why Choose Us Section */}
       <section className="py-20 bg-gray-50">
@@ -115,7 +115,7 @@ const About: React.FC = () => {
       </section>
 
       {/* Message from Founder */}
-      <section className="py-20 bg-white">
+      {/* <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="rounded-2xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
@@ -139,10 +139,10 @@ const About: React.FC = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Simple Stats Strip */}
-      <section className="bg-[#1a1a1a] py-16 text-white">
+      {/* <section className="bg-[#1a1a1a] py-16 text-white">
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
           <div>
             <div className="text-5xl font-bold mb-2 font-serif">500+</div>
@@ -161,10 +161,10 @@ const About: React.FC = () => {
             <div className="text-gray-400 font-medium">Years of Trust</div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Testimonials */}
-      <section className="py-24 bg-gray-50">
+      {/* <section className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold text-slate-900 font-serif mb-16">Client Testimonials</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -191,7 +191,7 @@ const About: React.FC = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

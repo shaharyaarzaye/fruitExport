@@ -27,13 +27,13 @@ const Footer: React.FC = () => {
             <p className="text-slate-400 text-sm leading-relaxed">
               Leading exporter of premium Indian agro products, spices, rice, dry fruits & pulses to over 25+ countries worldwide. Committed to quality and integrity since 2015.
             </p>
-            <div className="flex gap-4">
+            {/* <div className="flex gap-4">
               {[Facebook, Instagram, Linkedin, Youtube].map((Icon, i) => (
                 <a key={i} href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-yellow-500 transition-colors">
                   <Icon size={18} />
                 </a>
               ))}
-            </div>
+            </div> */}
           </div>
 
           {/* Quick Links */}
@@ -74,10 +74,10 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-lg font-bold mb-6 border-l-4 border-yellow-500 pl-4">Contact Info</h4>
             <ul className="space-y-6 text-slate-400 text-sm">
-              <li className="flex gap-4">
+              {/* <li className="flex gap-4">
                 <div className="flex-shrink-0 text-yellow-500"><MapPin size={20} /></div>
                 <span>123 Export House, Industrial Area, New Delhi - 110028, India</span>
-              </li>
+              </li> */}
               <li className="flex gap-4">
                 <div className="flex-shrink-0 text-yellow-500"><Phone size={20} /></div>
                 <div>
