@@ -81,8 +81,8 @@ const Footer: React.FC = () => {
               <li className="flex gap-4">
                 <div className="flex-shrink-0 text-yellow-500"><Phone size={20} /></div>
                 <div>
-                  <p>+91 98765 43210</p>
-                  <p>+91 98765 43211</p>
+                  <p>+91 94152 82011</p>
+                  <p>+91 73989 26793</p>
                 </div>
               </li>
               <li className="flex gap-4">
