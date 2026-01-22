@@ -40,19 +40,126 @@ export interface Feature {
 }
 
 export const PRODUCTS: Product[] = [
-  { id: 1, name: "Makhana (Fox Nuts)", category: "Other", image: "https://images.unsplash.com/photo-1710421576768-ff985fa63b60?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", description: "Premium quality roasted fox nuts.", quantity: "1000" },
-  { id: 2, name: "Organic Jaggery (Gur)", category: "Other", image: "/jaggery.png", description: "Pure chemical-free traditional jaggery.", quantity: "1000" },
-  { id: 3, name: "Organic Turmeric Powder", category: "Organic Products", image: "https://images.unsplash.com/photo-1615485500834-bc10199bc727?q=80&w=580&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", description: "High curcumin content organic turmeric.", quantity: "100" },
-  { id: 4, name: "1121 Basmati Rice", category: "Basmati Rice", image: "https://images.unsplash.com/photo-1586201375761-83865001e31c?q=80&w=600&auto=format&fit=crop", description: "Long-grain aromatic premium basmati.", quantity: "1000" },
-  { id: 5, name: "Alphonso & Kesar Mango", category: "Fresh Fruits", image: "https://images.unsplash.com/photo-1553279768-865429fa0078?q=80&w=600&auto=format&fit=crop", description: "The king of fruits exported globally.", quantity: "1000" },
-  { id: 6, name: "G4 Green Chilli", category: "Fresh Vegetables", image: "https://images.unsplash.com/photo-1576763595295-c0371a32af78?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", description: "Extra spicy, long shelf-life chillies.", quantity: "1000" },
-  { id: 7, name: "Pomegranate (Anar)", category: "Fresh Fruits", image: "https://images.unsplash.com/photo-1541344999736-83eca272f6fc?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", description: "Premium Bhagwa quality pomegranates.", quantity: "100" },
-  { id: 8, name: "Dates (Khajur)", category: "Other", image: "https://images.unsplash.com/photo-1614061811858-dde54a522f5e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", description: "Natural dates sourced from best farms.", quantity: "1000" },
-  { id: 9, name: "Fresh Papaya", category: "Fresh Fruits", image: "https://images.unsplash.com/photo-1526318472351-c75fcf070305?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", description: "Sweet and high nutrient fresh papayas.", quantity: "100" },
-  { id: 10, name: "Fresh Guava", category: "Fresh Fruits", image: "https://images.unsplash.com/photo-1689996647099-a7a0b67fd2f6?q=80&w=435&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", description: "Crispy and juicy pink-flesh guavas.", quantity: "100" },
-  { id: 11, name: "Fresh Coconut", category: "Fresh Fruits", image: "https://plus.unsplash.com/premium_photo-1675040830227-9f18e88fd1f9?q=80&w=327&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", description: "Young and tender water coconuts.", quantity: "100" },
-  { id: 12, name: "Banana (Grand Naine)", category: "Fresh Fruits", image: "https://images.unsplash.com/photo-1603833665858-e61d17a86224?q=80&w=327&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", description: "Export quality uniform size bananas.", quantity: "1000" },
-  { id: 13, name: "Fresh Apple", category: "Fresh Fruits", image: "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?q=80&w=600&auto=format&fit=crop", description: "Crisp and fresh mountain apples.", quantity: "100" },
+  {
+    id: 1,
+    name: "Potato",
+    category: "Fresh Vegetables",
+    image: "https://images.unsplash.com/photo-1518977676601-b53f82aba655?q=80&w=870&auto=format&fit=crop",
+    description: "Versatile, earthy, and starchy tubers perfect for mashing, roasting, or frying.",
+    quantity: "100"
+  },
+  {
+    id: 2,
+    name: "Tomato",
+    category: "Fresh Vegetables",
+    image: "https://images.unsplash.com/photo-1582284540020-8acbe03f4924?q=80&w=435&auto=format&fit=crop",
+    description: "Juicy, vibrant red tomatoes, ideal for salads, sauces, and garnishes.",
+    quantity: "100"
+  },
+  {
+    id: 3,
+    name: "Onion",
+    category: "Fresh Vegetables",
+    image: "https://images.unsplash.com/photo-1618512496248-a07fe83aa8cb?q=80&w=387&auto=format&fit=crop",
+    description: "Pungent and flavorful bulbs that form the essential base for savory dishes.",
+    quantity: "100"
+  },
+  {
+    id: 4,
+    name: "Brinjal / Eggplant",
+    category: "Fresh Vegetables",
+    image: "https://images.unsplash.com/photo-1683543122945-513029986574?q=80&w=774&auto=format&fit=crop",
+    description: "Glossy purple skin with a tender, meaty interior that absorbs flavors beautifully.",
+    quantity: "100"
+  },
+  {
+    id: 5,
+    name: "Lady finger / Okra",
+    category: "Fresh Vegetables",
+    image: "https://images.unsplash.com/photo-1694152411105-1d8c09149382?q=80&w=879&auto=format&fit=crop",
+    description: "Fresh, slender green pods known for their unique texture and high fiber content.",
+    quantity: "100"
+  },
+  {
+    id: 6,
+    name: "Cauliflower",
+    category: "Fresh Vegetables",
+    image: "https://images.unsplash.com/photo-1566842600175-97dca489844f?q=80&w=464&auto=format&fit=crop",
+    description: "Compact, crunchy white florets that are excellent for steaming or roasting.",
+    quantity: "100"
+  },
+  {
+    id: 7,
+    name: "Carrot",
+    category: "Fresh Vegetables",
+    image: "https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?q=80&w=387&auto=format&fit=crop",
+    description: "Sweet and crunchy orange root vegetables packed with Vitamin A.",
+    quantity: "100"
+  },
+  {
+    id: 8,
+    name: "Peas",
+    category: "Fresh Vegetables",
+    image: "https://images.unsplash.com/photo-1642864106922-f79b4aea18b4?q=80&w=435&auto=format&fit=crop",
+    description: "Sweet, tender green seeds housed in crisp pods, perfect for stir-fries.",
+    quantity: "100"
+  },
+  {
+    id: 9,
+    name: "Spinach",
+    category: "Fresh Vegetables",
+    image: "https://images.unsplash.com/photo-1576045057995-568f588f82fb?q=80&w=580&auto=format&fit=crop",
+    description: "Dark, leafy greens rich in iron and nutrients for a healthy diet.",
+    quantity: "100"
+  },
+  {
+    id: 10,
+    name: "Capsicum / Bell Pepper",
+    category: "Fresh Vegetables",
+    image: "https://images.unsplash.com/photo-1518736114810-3f3bedfec66a?q=80&w=870&auto=format&fit=crop",
+    description: "Crisp and colorful peppers that add a mild sweetness to any meal.",
+    quantity: "100"
+  },
+  {
+    id: 11,
+    name: "Bottle Gourd",
+    category: "Fresh Vegetables",
+    image: "https://images.unsplash.com/photo-1730127487636-b7fe550af030?q=80&w=387&auto=format&fit=crop",
+    description: "A hydrating, light green vegetable with a mild taste and soft texture.",
+    quantity: "100"
+  },
+  {
+    id: 12,
+    name: "Pumpkin",
+    category: "Fresh Vegetables",
+    image: "https://images.unsplash.com/photo-1570586437263-ab629fccc818?q=80&w=435&auto=format&fit=crop",
+    description: "Deep orange, sweet-fleshed vegetable ideal for soups and pies.",
+    quantity: "100"
+  },
+  {
+    id: 13,
+    name: "Cucumber",
+    category: "Fresh Vegetables",
+    image: "https://images.unsplash.com/photo-1604977042946-1eecc30f269e?q=80&w=580&auto=format&fit=crop",
+    description: "Cool and refreshing with high water content, perfect for hydrating salads.",
+    quantity: "100"
+  },
+  {
+    id: 14,
+    name: "Ginger",
+    category: "Fresh Vegetables",
+    image: "https://images.unsplash.com/photo-1603431777782-912e3b76f60d?q=80&w=387&auto=format&fit=crop",
+    description: "A zesty and aromatic root used to add a spicy kick to food and tea.",
+    quantity: "100"
+  },
+  {
+    id: 15,
+    name: "Chili",
+    category: "Fresh Vegetables",
+    image: "https://images.unsplash.com/photo-1576763595295-c0371a32af78?q=80&w=1470&auto=format&fit=crop",
+    description: "Hot and spicy peppers to bring heat and intensity to your favorite recipes.",
+    quantity: "100"
+  }
 ];
 
 export const GALLERY_ITEMS: GalleryItem[] = [
