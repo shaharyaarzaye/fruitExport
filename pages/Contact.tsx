@@ -63,7 +63,7 @@ const Contact: React.FC = () => {
             {/* Phone */}
             <div className="bg-white p-10 rounded-2xl shadow-2xl shadow-slate-200/50 border border-gray-50 flex flex-col items-center text-center hover:-translate-y-2 transition-transform duration-500 group">
               <div className="w-16 h-16 bg-[#ffc107] text-black rounded-2xl flex items-center justify-center mb-8 shadow-xl shadow-yellow-500/20 group-hover:rotate-6 transition-transform">
-                <MapPin size={30} />
+                <Globe size={30} />
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-3">Address </h3>
               <p className="text-slate-500 text-sm font-medium leading-relaxed">
@@ -93,17 +93,7 @@ const Contact: React.FC = () => {
               </p>
             </div>
 
-            {/* Office */}
-            <div className="bg-white p-10 rounded-2xl shadow-2xl shadow-slate-200/50 border border-gray-50 flex flex-col items-center text-center hover:-translate-y-2 transition-transform duration-500 group">
-              <div className="w-16 h-16 bg-[#ffc107] text-black rounded-2xl flex items-center justify-center mb-8 shadow-xl shadow-yellow-500/20 group-hover:rotate-6 transition-transform">
-                <Globe size={30} />
-              </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Registered Office</h3>
-              <p className="text-slate-500 text-sm font-medium leading-relaxed">
-                New Delhi, India<br />
-                Serving 25+ Countries
-              </p>
-            </div>
+
           </div>
         </div>
       </section>
@@ -241,15 +231,7 @@ const Contact: React.FC = () => {
                 </div>
               </div>
 
-              <div className="mt-12 flex items-center gap-4">
-                <div className="p-3 bg-white/5 rounded-xl border border-white/10">
-                  <Globe size={24} className="text-yellow-500" />
-                </div>
-                <div>
-                  <p className="text-[10px] font-bold text-gray-500 uppercase tracking-widest">Market Coverage</p>
-                  <p className="text-sm font-bold">EMEA, Asia-Pac, Americas</p>
-                </div>
-              </div>
+              
             </div>
 
           </div>
