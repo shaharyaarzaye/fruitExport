@@ -1,9 +1,13 @@
 
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { PRODUCTS } from '../constants';
+import { useEnquiry } from '../context/EnquiryContext';
 
 const Products: React.FC = () => {
+  const { openEnquiry } = useEnquiry();
+  const navigate = useNavigate();
+
   return (
     <div className="bg-[#f9fafb]">
       {/* Product Banner - Dark Style */}
@@ -35,37 +39,44 @@ const Products: React.FC = () => {
             {PRODUCTS.map((product) => (
               <div 
                 key={product.id} 
-                className="bg-white rounded-lg overflow-hidden border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300"
+                className="bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-2xl transition-all duration-500 group"
               >
                 {/* Image Container */}
-                <div className="relative h-72">
+                <div className="relative h-72 overflow-hidden">
                   <img 
                     src={product.image} 
                     alt={product.name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 </div>
 
                 {/* Content */}
-                <div className="p-6 text-center">
-                  <div className="mb-3">
-                    <span className="bg-yellow-500 text-black text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-md">
+                <div className="p-8 text-center">
+                  <div className="mb-4">
+                    <span className="bg-yellow-500/10 text-yellow-700 text-[10px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">
                       {product.category}
                     </span>
                   </div>
-                  <h3 className="text-xl font-bold text-[#1a1a1a] mb-1">
+                  <h3 className="text-2xl font-bold text-[#1a1a1a] mb-2 font-serif">
                     {product.name}
                   </h3>
-                  <p className="text-gray-800 font-medium mb-6">
-                    {product.quantity}
+                  <p className="text-slate-500 text-sm mb-8 leading-relaxed line-clamp-2">
+                    {product.description}
                   </p>
 
                   {/* Buttons */}
-                  <div className="flex gap-2">
-                    <button className="flex-1 bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-4 rounded text-xs transition-colors">
-                      Quick Enquiry
+                  <div className="flex flex-col gap-3">
+                    <button 
+                      onClick={() => openEnquiry(product.name)}
+                      className="w-full bg-[#ffc107] hover:bg-[#e0a800] text-[#1a1a1a] font-bold py-3.5 rounded-lg text-sm transition-all shadow-lg shadow-yellow-500/10"
+                    >
+                      Request Quote
                     </button>
-                    <button className="flex-1 bg-white hover:bg-gray-50 text-black font-medium py-3 px-4 border border-gray-300 rounded text-xs transition-colors">
+                    <button 
+                      onClick={() => navigate(`/products/${product.id}`)}
+                      className="w-full bg-white hover:bg-gray-50 text-slate-700 font-semibold py-3.5 border border-gray-200 rounded-lg text-sm transition-all"
+                    >
                       View Details
                     </button>
                   </div>
