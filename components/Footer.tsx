@@ -74,10 +74,10 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-lg font-bold mb-6 border-l-4 border-yellow-500 pl-4">Contact Info</h4>
             <ul className="space-y-6 text-slate-400 text-sm">
-              {/* <li className="flex gap-4">
+              <li className="flex gap-4">
                 <div className="flex-shrink-0 text-yellow-500"><MapPin size={20} /></div>
-                <span>123 Export House, Industrial Area, New Delhi - 110028, India</span>
-              </li> */}
+                <span>Dudua, Mondh, Bhadoh, Varanasi, Uttar Pradesh, 221406</span>
+              </li>
               <li className="flex gap-4">
                 <div className="flex-shrink-0 text-yellow-500"><Phone size={20} /></div>
                 <div>
